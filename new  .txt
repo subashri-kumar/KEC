@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resume</title> 
+    <style>
+        img {
+            width: 100px;
+            border-radius: 60px;
+            float: left;
+            margin-right: 20px; /* Adjusted for better spacing */
+        }
+        em {
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <img src="profile.jpeg" alt="profile">
+            </td>
+            <td>
+                <h2>SUBASHRI K</h2>
+                <h4>Electrical and Electronics Engineer</h4>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <h4>Career Objective</h4>
+                <p>Looking forward to an opportunity to work in a dynamic, challenging environment, where I can utilize my skills for developing my career and for the growth of the organization.</p>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <p><strong>Academic Qualification</strong></p>
+                <ul>
+                    <li>Pursuing Third Year of Under Graduation B.E (Electrical and Electronics Engineering) at Kongu Engineering College, Perundurai with CGPA - 7.95</li>
+                    <li>Completed Higher Secondary under Bharathiyar Matric Higher Secondary School, Attur with 91.35%</li>
+                    <li>Completed Secondary Education under Bharathiyar Matric Higher Secondary School, Attur with 92.6%</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <p><em>Papers Presented</em></p>
+                <ul>
+                    <li>Presented a paper on the topic of Telluric current in Zenith at KEC</li>
+                    <li>Presented a project on the topic of E Vehicle in Madras Institute of Technology</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <h4>Skill Set</h4>
+                <ul>
+                    <li><strong>Softwares known:</strong> MATLAB</li>
+                    <li><strong>Languages known:</strong> Basics of C, Python, Java</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <h4>Personal Information</h4>
+                <p>Email: subashrik.21eee@kongu.edu</p>
+                <p>Phone: 8778699445</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/subashri" target="_blank">linkedin.com/in/subashri</a></p>
+                <p>GitHub: <a href="https://github.com/subashri" target="_blank">github.com/subashri</a></p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
