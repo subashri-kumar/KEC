@@ -1,0 +1,354 @@
+JAVA SCRIPT
+
+Variable name can contain numbers,digits and characters.
+Variable names should start with a letter.It can be start with _,$
+Names are case sensitive.
+Keywords cannot be used.
+Name should be in camel case.Ex:fullStackDev.
+Variable name length should be 20 according to the usuability.
+Should not contain any space.
+
+Varibles can be declared in 4 ways:
+       Automatically
+       using var 
+       using let
+       using const
+Alaways use const if the value should not be changed
+Always use const if the type should not be changed (arrays and objects).
+Only use let,if you can't use const
+var - if you must support old browser
+
+*************************************************************
+
+DATATYPES: 
+
+A variable without a value,has the value undefined
+          Ex: let  car;
+                undefined
+                car
+Any variable can be emptified by setting the value to undefined.
+          Ex: car = "BMW"
+                 'BMW'
+                  car = undefined;
+                  undefined
+
+const mySymbol=Symbol();
+It is useful for creating APIs
+When you want to assign a unique identifier to an object.
+-------------------------------------------------------------------------------------------------
+typeOf : EX:
+                   typeof "45"
+                   'string'
+                   typeof l
+                   'string'
+                   typeof 92
+                   'number'
+                   typeof 43585839055n
+                   'bigint'
+-------------------------------------------------------------------------------------------------
+const person={firstName:"Vijay",lastName:"Joseph"}
+undefined
+person
+{firstName: 'Vijay', lastName: 'Joseph'}
+const person={firstName:"Subashri",lastName:"Kumar"}
+undefined
+person
+{firstName: 'Subashri', lastName: 'Kumar'}
+person.firstName
+'Subashri'
+person.lastName
+'Kumar'
+person.firstName="Dhanalakshmi"
+'Dhanalakshmi'
+person
+{firstName: 'Dhanalakshmi', lastName: 'Kumar'}
+typeof person
+'object'
+person['firstName']
+'Dhanalakshmi'
+--------------------------------------------------------------------------------------------------
+OPERATORS 
+`````````````````
+Arithmetic   : + , - , * , / , %
+Relational    : < ,
+Logical        :
+Assignment := , += , 
+
+5>>1
+5-0101
+   010
+5-0000 0000 0000 0101
+
+Types operators:
+```````````````````
+typeof - returns type of a variable
+instanceof - returns true if an object is an instance of an object type
+
+Ternary Oprator
+```````````````````
+4<5?true : false
+
+if(a<18)
+console.log("not eligibe to vote")
+else
+ console.log("eligible to vote")
+
+let text;
+for(let i=0;i<=5;i++){
+    text += i +" ";
+}
+
+FOR LOOP :
+``````````````
+let text;for(let i=0;i<=5;i++){
+    text += i +" ";
+}
+'undefined0 1 2 3 4 5 '
+
+const person={firstName:"Vijay",lastName:"Joseph",age:49}
+text=""
+''
+for(let x in person)
+    text+=person[x]+" "
+'Vijay Joseph 49 '
+text=""
+''
+for(let x in person)
+    text+=x+" "+person[x]+" ;"
+'firstName Vijay ;lastName Joseph ;age 49 ;'
+
+FOR EACH :
+```````````````
+map.forEach(function(value,key){
+    console.log(value+" "+key)
+})
+32 EEE
+8 CIVIL
+
+WHILE :
+`````````
+let x=0,text="";while(x<=5){
+    text+=x+" ";
+    x++;
+}text;
+'0 1 2 3 4 5 '
+
+let x=0,text="";do{
+    text+=x+" ";
+    x++;
+}while(x<=5)text;
+'0 1 2 3 4 5 '
+
+///to show x value
+let x=0,text="";do{
+    text+=x+" ";
+    x++;
+}while(x<=5)x;
+6
+
+FUNCTIONS:
+````````````````
+function add(a,b){return a+b;}
+undefined
+add(5,4)
+9
+let ans=add(5,4)
+undefined
+ans
+9
+function add(a,b){let k=3;console.log(k);return a+b;}
+undefined
+add(5,4)
+ 3
+9
+
+function add(a,b){
+let k=3;//local variable
+console.log(k);
+return a+b;
+}
+let k=3;//global variable
+add(4,5)
+function add(a,b)
+{console.log(k);
+return a+b;
+}
+---------------------------------------------------------------------------------------------------------------------
+MAP :
+``````
+const map=new Map()
+undefined
+
+map.set("EEE",32)
+Map(1) {'EEE' => 32}
+
+map.set("EIE",11)
+Map(2) {'EEE' => 32, 'EIE' => 11}
+
+map.set("CIVIL",8)
+Map(3) {'EEE' => 32, 'EIE' => 11, 'CIVIL' => 8}
+
+map.set("EIE",12)
+Map(3) {'EEE' => 32, 'EIE' => 12, 'CIVIL' => 8}
+
+map.get("EIE")
+12
+
+map.get("EEE")
+32
+
+map.delete("EIE")
+true
+
+map.get("EIE")
+undefined
+
+map.has("EIE")
+false
+
+map.has("EEE")
+true
+
+map.size
+2
+
+for(const x of map.entries()){
+    text=text+x;
+}
+'EEE,32CIVIL,8'
+
+for(const x of map.entries()){
+    console.log(x)
+}
+(2) ['EEE', 32]
+(2) ['CIVIL', 8]
+
+const m=new Map([["mech",11],["food",1],["mts",15]])
+undefined
+m
+Map(3) {'mech' => 11, 'food' => 1, 'mts' => 15}
+
+const m=new Set([["mech",11],["food",1],["mts",15]])
+undefined
+m
+Set(3) {Array(2), Array(2), Array(2)}
+
+const m=new Set(["mech",1,5,4])
+undefined
+m
+Set(4) {'mech', 1, 5, 4}
+
+SET will contain only unique elements.
+set.add("fried rice")
+Set(1) {'fried rice'}
+
+set.add("Noodles")
+Set(2) {'fried rice', 'Noodles'}
+
+set.add("Briyani")
+Set(3) {'fried rice', 'Noodles', 'Briyani'}
+
+set.add("Noodles")
+Set(3) {'fried rice', 'Noodles', 'Briyani'}
+
+set.add("noddles")
+Set(4) {'fried rice', 'Noodles', 'Briyani', 'noddles'}
+
+set.delete("noddles")
+true
+
+set
+Set(3) {'fried rice', 'Noodles', 'Briyani'}
+
+function greetingAfterSometime(name, callback){
+setTimeout(function(){
+console.log("Heloo"+name+"  ");
+callback();
+},2000);
+}
+
+
+function sayBye(){
+console.log("GoodBye");
+}
+
+greetingsAfterSometime("Dude", sayBye);
+
+function isAuthorized(){
+return Math.random()>0.5;
+}
+
+function checkAuthoriztion(){
+return new Promise(function(resolve,reject){
+setTimeout(function(){
+if(isAuthorized()){
+resolve("Authorized");
+}else{
+reject("unauthorized");
+}},1000);
+});
+}checkAuthorization().then(function(message) {
+console.log(message); }).catch(function(error) {
+console.error(error);});
+
+function isAuthorized(){
+return Math.random()>0.5;
+}
+
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+setTimeout(function(){
+if(isAuthorized()){
+resolve("Authorized");
+}else{
+reject("unauthorized");
+}},1000);
+});
+}checkAuthorization().then(function(message) {
+console.log(message); }).catch(function(error) {
+console.error(error);});
+
+Promise {<pending>}
+VM811:16 unauthorized
+(anonymous) @ VM811:16
+Promise.catch (async)
+(anonymous) @ VM811:15
+function isAuthorized(){
+return Math.random()<0.5;
+}
+
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+setTimeout(function(){
+if(isAuthorized()){
+resolve("Authorized");
+}else{
+reject("unauthorized");
+}},1000);
+});
+}checkAuthorization().then(function(message) {
+console.log(message); }).catch(function(error) {
+console.error(error);});
+
+Promise {<pending>}
+VM815:15 Authorized
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
